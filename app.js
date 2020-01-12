@@ -26,7 +26,7 @@ app.use('/web/hotel',hotelThroughURL)
 app.use('/web/user',userThroughURL)
 
 //simple start
-app.get('/myServer', (req,res)=>{
+app.get('/', (req,res)=>{
     res.send({
         statusCode: res.statusCode,
         message: "Hello from Kautilya Software"
