@@ -33,6 +33,12 @@ app.get('/', (req,res)=>{
     });
 })
 
+app.post('/myData',(req,res)=>{
+    res.send({
+        message:"Hello"
+    })
+})
+
 app.listen(portNumber, () => {
     console.log("Kautilya server is running on Port " + portNumber)
 })
