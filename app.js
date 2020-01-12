@@ -43,6 +43,6 @@ app.post('/myData',(req,res)=>{
 //     console.log("Kautilya server is running on Port " + portNumber)
 // })
 
-app.listen(process.env.portNumber, ()=>{
+app.listen(process.env.PORT || 500, ()=>{
     console.log('Hello from KESPL');
 })
